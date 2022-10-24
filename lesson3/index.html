@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sahifa</title>
+  <link rel="icon" href="https://telegra.ph/file/2f7edb2f4c7bfacb00826.jpg">
+  <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="container bg-info">
+<!--  Parametr topish-->
+<div class="offset-4 col-4 mt-5 bg-secondary">
+  <h1 class="text-center text-white ">Parametrini topish</h1>
+  <div class="row ml-5 mt-3">
+    <label for="Para"><input class="form-control w-75" type="number" id="Para" placeholder="Sonni kiriting"></label>
+  <button type="button" class="btn btn-danger w-25" onclick="Parametr()">Javobi</button>
+    <h2 class="text-white text-center mt-3 ml-5" id="jvb"></h2>
+  </div>
+</div>
+<!--  O'rtacha arifmetik-->
+  <div class="offset-4 col-4 mt-5 bg-secondary">
+    <h1 class="text-center text-white ">O'rtacha arifmetik</h1>
+    <div class="row ml-5 mt-3">
+      <div class="row"> <label for="Para1"><h5>a</h5><input class="form-control w-75" type="number" id="Para1" placeholder="Sonni kiriting"></label>
+        <label for="Para"><h5>b</h5><input class="form-control w-75" type="number" id="Para2" placeholder="Sonni kiriting"></label>
+        <button type="button" class="btn btn-danger w-25 mt-3" onclick="urtacha()" >Javob</button>
+        <h2 class="text-white text-center mt-3 ml-5" id="jvb4"></h2>
+      </div>
+    </div>
+  </div>
+<!--  Yuzasini aniqlash-->
+  <div class="offset-4 col-4 mt-5 bg-secondary">
+    <h1 class="text-center text-white ">Yuzasini aniqlash</h1>
+    <div class="row ml-5 mt-3">
+      <label for="Para"><input class="form-control w-75" type="number" id="Para3" placeholder="Sonni kiriting"></label>
+      <button type="button" class="btn btn-danger w-25" onclick="Yuzasi()" >Javobi</button>
+      <h2 class="text-white text-center mt-3 ml-5" id="jvb1"></h2>
+    </div>
+  </div>
+<!--  To'g'ri turburchak yuzasi-->
+  <div class="offset-4 col-4 mt-5 bg-secondary">
+    <h1 class="text-center text-white ">To'g'ri turburchak yuzasi va parametr</h1>
+    <div class="row ml-5 mt-3">
+     <div class="row"> <label for="Para"><h5>a</h5><input class="form-control w-75" type="number" id="Para5" placeholder="Sonni kiriting"></label>
+       <button type="button" class="btn btn-danger w-25 mt-3" onclick="Turpar()">Parament</button>
+      <label for="Para"><h5>b</h5><input class="form-control w-75" type="number" id="Para6" placeholder="Sonni kiriting"></label>
+      <button type="button" class="btn btn-danger w-25 mt-3" onclick="Turburyuz()" >Yuza</button>
+      <h2 class="text-white text-center mt-3 ml-5" id="jvb2"></h2>
+    </div>
+  </div>
+  </div>
+<!--    Aylananing diametrini topish-->
+    <div class="offset-4 col-4 mt-5 bg-secondary">
+      <h1 class="text-center text-white ">Aylananing diametri topish</h1>
+      <div class="row ml-5 mt-3">
+        <label for="Para"><input class="form-control w-75" type="number" id="Para7" placeholder="Sonni kiriting"></label>
+        <button type="button" class="btn btn-danger w-25" onclick="Adiametri()" >Javobi</button>
+        <h2 class="text-white text-center mt-3 ml-5" id="jvb3"></h2>
+      </div>
+    </div>
+<!--O'rta geometrigi-->
+      <div class="offset-4 col-4 mt-5 bg-secondary">
+        <h1 class="text-center text-white ">O'rta geometrigi</h1>
+        <div class="row ml-5 mt-3">
+          <div class="row"> <label for="Para"><h5>a</h5><input class="form-control w-75" type="number" id="Para8" placeholder="Sonni kiriting"></label>
+
+            <label for="Para"><h5>b</h5><input class="form-control w-75" type="number" id="Para9" placeholder="Sonni kiriting"></label>
+            <button type="button" class="btn btn-danger w-25 mt-3" onclick="geometri()" >Geomet</button>
+            <h2 class="text-white text-center mt-3 ml-5" id="jvb7"></h2>
+          </div>
+        </div>
+      </div>
+<!--Kubning sirtini topish-->
+  <div class="offset-4 col-4 mt-5 bg-secondary">
+    <h1 class="text-center text-white ">Kubning hajmini topish</h1>
+    <div class="row ml-5 mt-3">
+      <label for="Para"><input class="form-control w-75" type="number" id="Para10" placeholder="Sonni kiriting"></label>
+      <button type="button" class="btn btn-danger w-25" onclick="sirti()" >Javobi</button>
+      <h2 class="text-white text-center mt-3 ml-5" id="jvb9"></h2>
+    </div>
+  </div>
+<!--  Sirtini-->
+  <div class="offset-4 col-4 mt-5 bg-secondary">
+    <h1 class="text-center text-white ">Kubning sirtini topish</h1>
+    <div class="row ml-5 mt-3">
+      <label for="Para"><input class="form-control w-75" type="number" id="Para11" placeholder="Sonni kiriting"></label>
+      <button type="button" class="btn btn-danger w-25" onclick="hajmini()" >Javobi</button>
+      <h2 class="text-white text-center mt-3 ml-5" id="jvb12"></h2>
+    </div>
+  </div>
+<!--Paralapepid hajmi-->
+
+  <div class="offset-4 col-4 mt-5 bg-secondary">
+    <h1 class="text-center text-white ">Paralapepidni hajmi</h1>
+    <div class="row ml-5 mt-3">
+      <div class="row"> <label for="Para"><h5>a</h5><input class="form-control w-75" type="number" id="Para14" placeholder="Sonni kiriting"></label>
+
+        <label for="Para"><h5>b</h5><input class="form-control w-75" type="number" id="Para15" placeholder="Sonni kiriting"></label>
+        <button type="button" class="btn btn-danger w-25 mt-3" onclick="psirt()" >Sirti</button>
+        <label for="Para"><h5>d</h5><input class="form-control w-75" type="number" id="Para16" placeholder="Sonni kiriting"></label>
+        <button type="button" class="btn btn-danger w-25 mt-3" onclick="phajmi()" >Hajmi</button>
+        <h2 class="text-white text-center mt-3 ml-5" id="jvb15"></h2>
+      </div>
+    </div>
+  </div>
+<!--Doiraning radiusi-->
+  <div class="offset-4 col-4 mt-5 bg-secondary">
+    <h1 class="text-center text-white ">Doiraning uzunligi va yuzasi</h1>
+    <div class="row ml-5 mt-3">
+      <div class="row"> <label for="Para"><h5>a</h5><input class="form-control w-75" type="number" id="Para20" placeholder="Sonni kiriting"></label>
+        <button type="button" class="btn btn-danger w-25 mt-3" onclick="radius()" >Uzunligi</button>
+        <button type="button" class="btn btn-danger w-25 mt-3  ml-5" onclick="yuza()" >Yuzasi</button>
+        <h2 class="text-white text-center mt-3 ml-5" id="jvb20"></h2>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+<script src="index.js"></script>
+<script src="Bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+<script src="Bootstrap/js/popper.min.js"></script>
+<script src="Bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
